@@ -1,0 +1,72 @@
+@media only screen and (max-width:668px) {
+
+
+    .container {
+        position: relative;
+        border: 14px solid rgb(221 173 125);
+        border-radius: 50%;
+    }
+
+    .clock {
+        height: 270px;
+        width: 270px;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+
+    }
+
+    .clock span {
+        position: absolute;
+        transform: rotate(calc(30deg * var(--i)));
+        inset: 12px;
+        text-align: center;
+    }
+
+    .clock span b {
+        font-size: 17px;
+    }
+
+    .clock::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        z-index: 2;
+    }
+
+    .hand {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .hand i {
+        position: absolute;
+        background-color: var(--clr);
+        width: var(--w);
+        height: var(--h);
+        border-radius: 8px;
+
+    }
+
+    #hour {
+
+        --h: 70px;
+        --w: 5px;
+    }
+
+    #min {
+        --h: 80px;
+        --w: 3px;
+    }
+
+    #sec {
+        --h: 90px;
+        --w: 2px;
+    }
+
+
+}

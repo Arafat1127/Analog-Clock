@@ -6,7 +6,7 @@
     color: #ffffff;
 }
 
-body {
+.analog {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,3 +86,4 @@ body {
     --h: 160px;
     --w: 3px;
 }
+
